@@ -1,0 +1,38 @@
+* Library Information
+ /search-number.el/ --- Search for numbers matching conditions (e.g. numbers greater than 10)
+
+ - Filename :: [[file:search-number.el][search-number.el]]
+ - Description :: Search for numbers matching conditions
+ - Author :: Joe Bloggs <vapniks@yahoo.com>
+ - Maintainer :: Joe Bloggs <vapniks@yahoo.com>
+Copyleft (Ↄ) 2017, Joe Bloggs, all rites reversed.
+ - Created :: 2017-02-09 02:11:06
+ - Version :: 0.1
+ - Last-Updated :: 2017-02-09 02:11:06
+ -           By :: Joe Bloggs
+ -     Update # :: 1
+ - URL :: https://github.com/vapniks/search-number
+ - Keywords :: convenience
+ - Compatibility :: GNU Emacs 24.5.1
+Package-Requires:  
+
+* Possible Dependencies
+
+* Commands
+Below is a complete list of commands:
+
+** search-forward-number
+Search forward for number which satisfies predicate PRED.
+Keybinding: M-x search-forward-number
+** search-backward-number
+Search backward for number which satisfies predicate PRED.
+Keybinding: M-x search-backward-number
+
+* Installation
+
+ - Put the library in a directory in the emacs load path, like ~/.emacs.d
+ - You can add a directory to your load-path with the following line in ~/.emacs
+   (add-to-list 'load-path (expand-file-name "~/elisp"))
+   where ~/elisp is the directory you want to add 
+   (you don't need to do this for ~/.emacs.d - it's added by default).
+ - Add the following to your ~/.emacs startup file: (require 'search-number)
